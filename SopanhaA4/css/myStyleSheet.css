@@ -1,0 +1,78 @@
+/*
+Name: Sopanha Phan
+Email: Sopanha_Phan@student.uml.edu
+File:http://weblab.cs.uml.edu/~sphan/A4/css/myStyleSheet.css
+91.61 GUI Programming I Assignment: Creating style sheet for my webpage,
+Sopanha Phan, UMass Lowell Computer Science, Sopanha_Phan@student.uml.edu
+Copyright (c) 2018 by Sopanha Phan. All rights reserved. May be freely copied
+or excerpted for educational purposes with credit to the author.
+Date of Creation: October 09, 2018 at 9:13 PM
+*/
+
+/* set up the html */
+html {
+    margin:20px;
+    /* max-width: 940px;*/
+    min-width: 720px;
+    background-color: antiquewhite;
+}
+
+/* set up the page */
+#page {
+    margin-left: auto;
+    margin-right:auto;
+    text-align: center;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: [head-col-start] auto [content-col-start] auto [content-col-mid] auto [head-col-end];
+    grid-template-rows: [head-row-start] auto [head-row-end] auto [content-row-end] auto [footer-row-end];
+
+}
+
+/* set up the header */
+#header {
+    border-style: double;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    grid-column: head-col-start / head-col-end ;
+    grid-row: head-row-start / head-row-end;
+}
+
+/* set up the profile picture */
+#left {
+    grid-column: head-col-start / content-col-start;
+	grid-row: head-row-end / footer-row-end;
+}
+
+/* set up the footer */
+#footer {
+    grid-column: content-col-start / head-col-end;
+	grid-row: content-row-end / footer-row-end;
+}
+
+/* set up the main contents */
+#main {
+    text-align: left;
+    grid-column: content-col-start / head-col-end;
+    grid-row: head-row-end / content-row-end;
+}
+
+/* changing the width and height etc. for the picture */
+#myPic {
+    float:left;
+    margin:20px;
+    padding-right: 20px; 
+    width: 150px;
+    height: 200px;
+}
+
+/* changing the list style */
+#contact li {
+    list-style: none;
+}
+
+/* adding shadow to the text */
+h3 {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
