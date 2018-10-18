@@ -1,0 +1,78 @@
+<!--
+Name: Sopanha Phan
+Email: Sopanha_Phan@student.uml.edu
+File:http://weblab.cs.uml.edu/~sphan/A4/FirstWebPageV2.html
+91.61 GUI Programming I Assignment: Creating First Web Page version 2,
+Sopanha Phan, UMass Lowell Computer Science, Sopanha_Phan@student.uml.edu
+Copyright (c) 2018 by Sopanha Phan. All rights reserved. May be freely copied
+or excerpted for educational purposes with credit to the author.
+Date of Creation: October 09, 2018 at 9:13 PM
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+		<meta charset="utf-8">
+		<title>About Me</title>
+		<link href="css/myStyleSheet.css" rel="stylesheet">
+</head>
+
+<body>
+	<div id="page">
+		<div id="header">
+			<h1>UMass Lowell<br/>GUI Programming I<br/></h1>
+		</div>
+		<div id="left">
+			<div id="profile">
+				<img id="myPic" src="ProfilePic.jpg" alt="ProfilePic.jpg">
+			</div>
+		</div>
+		<div id="main">
+			<h3>About Me:</h3>
+			<p>
+				Hello everyone! My name is Sopanha.  I'm majoring in
+				Computer Science in UMass Lowell, Class of 2019.  In my spare
+				time I like to go hangout with my friends and drink some beer.
+				In the summer I like to fishing and to go play volleyball
+				and in the winter I like to go skiing.  My favorite hobby is
+				playing games.
+			</p>
+			<div id="homework">
+				<h3>My HomeWorks:</h3>
+				<ul>
+				        <li>
+				                <a href="http://weblab.cs.uml.edu/~sphan/FirstWebPage.html">Assignment 2</a>
+				        </li>
+					<li>
+						<a href="http://weblab.cs.uml.edu/~sphan/A3/index.html">Assignment 3</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="footer">
+			<ul id="contact">
+				<li>
+					Name: Sopanha Phan
+				</li>
+				<li>
+					Email: <u>Sopanha_Phan@student.uml.edu</u>
+				</li>
+				<li>
+					Phone: 978-427-7075 
+				</li>
+				<li>
+					Media: <a href="https://www.facebook.com/sopanha.phan.5">https://www.facebook.com/sopanha.phan.5</a>
+				</li>
+			</ul>
+		</div>
+		<p>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
+    <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valid CSS!" />
+    </a>
+</p>
+	</div>
+</body>
+
+</html>
