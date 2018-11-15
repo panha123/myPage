@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <!--Name: Sopanha Phan, Sopanha_Phan@student.uml.edu
+  Computer Science Department, UMass Lowell Comp.4610, GUI Programming
+  File: A6.html, Created: 6-Nov-2018.-->
+  <head>
+    <title>Asignment 6</title>
+    <link rel="stylesheet" href="css/A6.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+  </head>
+  <body>
+    <!-- <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Project name</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <form class="navbar-form">
+                            <a href="#" class="btn btn-primary active">Sign Up</a>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Interactive Table</h1>
+      </div>
+    </div>
+    <div class="container">
+      <p>Please provide all the input in any order:</p>
+      <hr>
+        <div class="form-horizontal">
+          <div class="form-group">
+            <label for="startCol" class="col-sm-4 control-label">Start Column</label>
+            <div class="col-sm-5">
+              <input type="number" class="form-control" id="startCol" placeholder="Start Column">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="endCol" class="col-sm-4 control-label">End Column</label>
+            <div class="col-sm-5">
+              <input type="number" class="form-control" id="endCol" placeholder="End Column">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="startRow" class="col-sm-4 control-label">Start Row</label>
+            <div class="col-sm-5">
+              <input type="number" class="form-control" id="startRow" placeholder="Start Row">
+            </div> 
+          </div>
+          <div class="form-group">
+            <label for="endRow" class="col-sm-4 control-label">End Row</label>
+            <div class="col-sm-5">
+              <input type="number" class="form-control" id="endRow" placeholder="End Row">
+              <br>
+              <button type="Submit" class="btn btn-primary mb-2" id="submit">Submit</button>
+            </div>
+          </div>
+        </div>
+      <hr>
+      <div id="div1"></div>
+      <footer>
+        <!-- Copyright section + Validator link-->
+        <br>Copyright 2018 by Sopanha Phan. This page is valid
+        <!-- <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fwww.cs.uml.edu%2F~vtran1%2FHW6%2F" target="_blank"><i class="fa fa-html5"></i>HTML5</a> and
+        <a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fwww.cs.uml.edu%2F%7Evtran1%2FHW6%2Fstyle%2Fmain.css&profile=css3&usermedium=all&warning=1&vextwarning=" target="_blank"><i class="fa fa-css3"></i>CSS3</a> as per W3C. -->
+      </footer>
+    </div>
+    
+    <!-- loading my javascript -->
+    <script src="js/A6.js"></script>
+
+    <!-- loading jquery for boothstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
