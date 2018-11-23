@@ -1,9 +1,9 @@
 /*
     Name: Sopanha Phan, Sopanha_Phan@student.uml.edu
     Computer Science Department, UMass Lowell Comp.4610, GUI Programming
-    File: A6.js, Created: 6-Nov-2018.
+    File: A7.js, Created: 23-Nov-2018.
 */
-document.getElementById("submit").onclick = function() {myFunction()};
+// document.getElementById("submit").onclick = function() {myFunction()};
 function myFunction() {
     // get value from input form
     var startCol = Number(document.getElementById("startCol").value);
@@ -18,10 +18,10 @@ function myFunction() {
     endRow = Math.abs(endRow);
 
     // check if the user provide all input
-    if (startCol == 0 || endCol == 0 || startRow == 0 || endRow == 0){
-        alert("Please Provide All The Input!!!");
-    }
-    else{
+    // if (startCol == 0 || endCol == 0 || startRow == 0 || endRow == 0){
+    //     alert("Please Provide All The Input!!!");
+    // }
+    // else{
         // check if table already exist dont add
         var table = document.getElementById("table1");
         if(table){
@@ -92,5 +92,5 @@ function myFunction() {
 
         // add the table to the page
         div.appendChild(tbl);
-	}
+	// }
 }    

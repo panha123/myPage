@@ -2,7 +2,7 @@
 <html lang="en-US">
   <!--Name: Sopanha Phan, Sopanha_Phan@student.uml.edu
   Computer Science Department, UMass Lowell Comp.4610, GUI Programming
-  File: A7.html, Created: 6-Nov-2018.-->
+  File: A7.html, Created: 23-Nov-2018.-->
   <head>
     <title>Asignment 7</title>
     <link rel="stylesheet" href="css/A7.css" />
@@ -10,6 +10,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+
+
+    <!-- loading jquery for form validation -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <script src="js/form-validation.js"></script>
+
   </head>
   <body>
     <!-- <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -46,11 +54,11 @@
     <div class="container">
       <p>Please provide all the input in any order:</p>
       <hr>
-        <div class="form-horizontal" name="myForm">
+        <form action="" class="form-horizontal" id="myForm">
           <div class="form-group">
             <label for="startCol" class="col-sm-4 control-label">Start Column</label>
             <div class="col-sm-5">
-              <input type="number" class="form-control" id="startCol" name="startCol" placeholder="Start Column">
+              <input type="number" class="form-control" id="startCol" name="startCol" placeholder="Start Column" required>
             </div>
           </div>
           <div class="form-group">
@@ -73,7 +81,7 @@
               <button type="Submit" class="btn btn-primary mb-2" id="submit">Submit</button>
             </div>
           </div>
-        </div>
+        </form>
       <hr>
       <div id="div1"></div>
       <footer>
@@ -86,13 +94,8 @@
 
     <!-- loading my javascript -->
     <script src="js/A7.js"></script>
-
-    <!-- loading jquery for form validation -->
-    <script src="https://cdn.jsdelivr.net/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
-    <script src="js/form-validation.js"></script>
+    
     <!-- loading jquery for boothstrap -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
