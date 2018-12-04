@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <!--Name: Sopanha Phan, Sopanha_Phan@student.uml.edu
+  Computer Science Department, UMass Lowell Comp.4610, GUI Programming
+  File: A8.html, Created: 4-Dec-2018.-->
+  <head>
+    <title>Asignment 8</title>
+    <link rel="stylesheet" href="css/A8.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+
+
+    <!-- loading jquery for form validation -->
+    <!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+
+    <link rel="stylesheet" href="./css/jquery-ui.min.css">
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+
+    <script src="js/form-validation.js"></script>
+
+  </head>
+  <body>
+    <!-- <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Project name</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <form class="navbar-form">
+                            <a href="#" class="btn btn-primary active">Sign Up</a>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Interactive Table</h1>
+      </div>
+    </div>
+    <div class="container">
+      <p>Please provide all the input in any order:</p>
+      <hr>
+      <div id="tabs"> 
+        <ul>
+            <li class="tab"><a href="#tab-1">Input Form</a></li>
+
+            <!-- each of these li is one tab/entry -->
+            <!-- subsequently created tab is saved side by side with the form-->
+        </ul>
+        <!-- first tab, the input form-->
+        <div id="tab-1">
+          <form class="form-horizontal" id="myForm">
+            <div class="form-group">
+              <label for="startCol" class="col-sm-4 control-label">Start Column</label>
+              <div class="col-sm-2">
+                <input type="number" class="form-control" id="startCol" name="startCol" placeholder="Start Column" required>
+              </div>
+              <div class="col-sm-2">
+                <div id="sliderStartCol"></div>
+              </div>
+              
+            </div>
+            <div class="form-group">
+              <label for="endCol" class="col-sm-4 control-label">End Column</label>
+              <div class="col-sm-2">
+                <input type="number" class="form-control" id="endCol" name="endCol" placeholder="End Column">
+              </div>
+              <div class="col-sm-2">
+                <div id="sliderEndCol"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="startRow" class="col-sm-4 control-label">Start Row</label>
+              <div class="col-sm-2">
+                <input type="number" class="form-control" id="startRow" name="startRow" placeholder="Start Row">
+              </div>
+              <div class="col-sm-2">
+                <div id="sliderStartRow"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="endRow" class="col-sm-4 control-label">End Row</label>
+              <div class="col-sm-2">
+                <input type="number" class="form-control" id="endRow" name="endRow" placeholder="End Row">
+              </div>
+              <div class="col-sm-2">
+                <div id="sliderEndRow"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div>
+                <button type="Submit" class="btn btn-primary mb-4" id="addTab">Save Table</button>
+                <button type="Submit" class="btn btn-primary mb-4" id="delTab">Delete All Table</button>
+              </div>            
+            </div>
+          </form>
+        </div>
+        <hr>
+        <div id="div1"></div>
+      </div> 
+      
+
+      <footer>
+        <!-- Copyright section + Validator link-->
+        <br>Copyright 2018 by Sopanha Phan. This page is valid
+        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fpanha123.github.io%2FmyPage%2FA8%2FSopanhaA8%2FA8.html" target="_blank"><i class="fa fa-html5"></i>HTML5</a> and
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fpanha123.github.io%2FmyPage%2FA8%2FSopanhaA8%2FA8.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank"><i class="fa fa-css3"></i>CSS3</a> as per W3C.
+      </footer>
+    </div>
+
+    <!-- loading my javascript -->
+    <script src="js/A8.js"></script>
+    
+    <!-- loading jquery for boothstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

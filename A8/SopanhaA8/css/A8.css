@@ -1,0 +1,55 @@
+/*
+    Name: Sopanha Phan, Sopanha_Phan@student.uml.edu
+    Computer Science Department, UMass Lowell Comp.4610, GUI Programming
+    File: A8.css, Created: 4-Dec-2018.
+*/
+
+html {
+    /* full page height */
+    height: 100%;
+}
+
+body { 
+    /* The image used */
+    background-image: url("../images/backgroundImg.jpg");
+
+    /* Full height */
+    height: 100%; 
+    /* width:100%; */
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+
+.header {
+    /* font style and background color for table header */
+    font: italic bold 15px arial, sans-serif;
+    background-color: #ffffff;
+}
+
+.body {
+    /* table for color */
+    background-color: #ff80b3;
+}
+
+.ui-tabs-nav {
+    background: #b2b2b2;
+    /* Silver color */
+    color: white;
+}
+
+ul.tabs li.current {
+    background: #ededed;
+    color: #222;
+}
+
+/*unordered list*/
+
+ul {
+    list-style: none;
+    margin: 15px 0px 15px 0px;
+    padding: 0;
+    overflow: auto;
+}
