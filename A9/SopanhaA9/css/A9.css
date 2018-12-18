@@ -1,0 +1,158 @@
+/*
+    Name: Sopanha Phan, Sopanha_Phan@student.uml.edu
+    Computer Science Department, UMass Lowell Comp.4610, GUI Programming
+    File: A9.css, Created: 11-Dec-2018.
+*/
+
+html {
+    /* full page height */
+    height: 100%;
+    min-width: 1000px;
+    min-height: 100%;
+    width: 100%;
+}
+
+body { 
+    /* The image used */
+    background-image: url("../images/backgroundImg.jpg");
+    min-width: 1280px;
+    height: 100%; 
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+/* set some header style */
+.row h1 {
+    font-size: 50pt;
+    color: rgb(238, 255, 0);
+    box-shadow: 0 5px 20px 0 #000000;
+}
+
+/* make the border of the container rounded corner black */
+#wrapper {
+    border-radius: 5px;
+    border: 5px solid #000;
+}
+
+/* set some font and style for the score area */
+#score {
+    height:50px;
+    font-size: 16pt;
+    font-family: arial;
+    font-style: oblique;
+    color: rgb(218, 22, 22);
+}
+
+/* set width and some border style to panel container  */
+#pane-l {
+    border-radius: 5px;
+    border: 5px solid #000;
+    box-shadow: 0 5px 20px 0 #000000;
+    width: 300px;
+    height:"*";
+    text-align: center;
+}
+
+/* set margin and background color to the three buttons */
+#calculate, #new_game, #next_game {
+    margin-bottom: 10px; 
+    border-radius: 5px;
+    background-color: yellow;
+
+}
+
+/* set the border, width and height to the text_box */
+#text_box {
+    border-radius: 5px;
+    border: 5px solid #000;
+    box-shadow: 0 5px 20px 0 #000000;
+    width: 200px;
+    height: 200px;
+}
+
+/* set margin, heigth, and background image to the game board */
+#myBoard {
+    /* border: 3px solid salmon; */
+    margin:20px;
+    box-shadow: 0 5px 20px 0 #000000;
+    /* width:100%; */
+    height:100%;
+    min-width: 650px;
+    background-image: url("../images/Scrabble_Board_OneLine.png");
+    background-repeat: no-repeat;
+}
+
+/* set the background image to the characters holder */
+#wordHolder {
+    background-image: url("../images/scrabble-tile-holder-406774_640.png");
+    background-repeat: no-repeat;
+
+}
+
+/* change the image height of the character holder to 200px */
+img {
+    height: 200px;
+}
+
+/* set border, marging and width for the 7letters holder */
+#rack {
+    border-radius: 5px;
+    border: 5px solid #000;
+    box-shadow: 0 5px 20px 0 #000000;
+    min-width: 650px;
+    width: 75px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+/* set the min-height and margin to the tile */
+#tile_area {
+    min-height: 50px;
+    margin: 50px;
+}
+
+/* ul list style */
+ul {
+    display: inline;
+    padding: 0;
+}
+
+/* li list style */
+li {
+    background-size: contain;
+    width: 65px;
+    height: 65px;
+    border: 1px solid black;
+    margin-right: 5px;
+    text-align: center;
+    list-style: none;
+    float: left;
+}
+
+/* change the background size of the tile */
+.tile {
+    background-size: cover;
+    position: relative;
+}
+
+/* change the background size of the tile */
+#tile{
+    background-size: cover;
+}
+
+/* setting for td  */
+td {
+    float: left;
+    height: 78px;
+    width: 75px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 13px;
+    color: black;
+}
+
+/* change the text color of the footer */
+footer {
+    color: rgb(255, 251, 0);
+}

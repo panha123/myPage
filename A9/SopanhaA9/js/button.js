@@ -41,7 +41,7 @@ function startOver() {
     });
 }
 
-// this procedure is for calculate the score of each round.
+// this procedure is for calculate the score of each round
 function calculate_score() {
     $("#calculate").click(function() {
         var case2 = false;

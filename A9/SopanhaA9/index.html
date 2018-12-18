@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <!--Name: Sopanha Phan, Sopanha_Phan@student.uml.edu
+  Computer Science Department, UMass Lowell Comp.4610, GUI Programming
+  File: A9.html, Created: 11-Dec-2018.-->
+  <head>
+    <title>Asignment 9</title>
+    <link rel="stylesheet" href="css/A9.css" />
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="container-fluid">
+        <div class="row">
+          <h1>Scrabble Game</h1>
+        </div> 
+        <div class="row">
+          <div class="col-md-8">
+            <!-- place holder for the board -->
+            <div id="board"></div>
+            <!-- place holder for the characters holder -->
+            <div id="wordHolder"></div>
+            <!-- bos for the 7 letters -->
+            <div id="rack" class="rack-ui">
+              <!-- place holder for the 7 tiles -->
+              <div id="tile_area">
+                <!-- place holder for individual letters -->
+                <ul id="myLetters">
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <!-- Box for buttons and score -->
+            <div id="pane-l">
+                <div id="score">Score: 0</div>
+                <!-- Buttons -->
+                <input type="submit" id="calculate" value="Get Score">
+                <input type="submit" id="next_game" value="Next Round">
+                <input type="submit" id="new_game" value="Start Over">
+              </div>
+              <!-- Message box -->
+              <!-- <div id="text_box"> -->
+                <!-- <div id="error_message"> -->
+                    <!-- Scrabble Ready -->
+                <!-- </div> -->
+                <!-- <div id="tile_removed"> -->
+                <!-- </div> -->
+              </div>
+          </div>
+        </div>     
+      </div>
+    </div>
+       
+      <footer>
+        <!-- Copyright section + Validator link-->
+        <br>Copyright 2018 by Sopanha Phan. This page is valid
+        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fpanha123.github.io%2FmyPage%2FA9%2FSopanhaA9%2Findex.html" target="_blank"><i class="fa fa-html5"></i>HTML5</a> and
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fpanha123.github.io%2FmyPage%2FA9%2FSopanhaA9%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank"><i class="fa fa-css3"></i>CSS3</a> as per W3C.
+      </footer>
+    
+
+    <!-- loading my javascript -->
+    <script src="js/gameLayout.js"></script>
+    <script src="js/scrabble.js"></script>
+    <script src="js/scrabbleBag.js"></script>
+    <script src="js/variables.js"></script>  
+    <script src="js/button.js"></script>  
+
+
+    <!-- loading jquery for boothstrap -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins). -->
+    <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- jQuery UI Slider and Tab Wigets -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  </body>
+</html>
